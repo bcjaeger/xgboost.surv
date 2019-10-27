@@ -3,24 +3,38 @@ test_that(
   "correct inputs work",
   {
 
-    slab = lbl_survival(
+    slab = sgb_label(
       time = c(1,2,3),
       status = c(1,0,1)
     )
 
     expect_equal(slab, c(1,-2,3))
 
-    blab = lbl_binary(response = factor(x = c("A","A","B")))
+    expect_equal(get_time(slab), c(1,2,3))
 
-    expect_equal(blab, c(0,0,1))
+    expect_equal(get_status(slab), c(1, 0, 1))
 
-    mlab = lbl_multi(
-      response = factor(x = c("A","C","B"), levels = c("C","A","B"))
+  }
+)
+
+test_that(
+  "incorrect inputs throw errors",
+  {
+
+    expect_error(
+      sgb_label(
+        time = c(1,2,rep(-3,10)),
+        status = c(1,0,rep(1,10))
+      ),
+      regexp = 'time vector'
     )
 
-    expect_equal(mlab, c(1,0,2))
-
-
-
+    expect_error(
+      sgb_label(
+        time = c(1,2,rep(3,10)),
+        status = c(1,0,rep(2,10))
+      ),
+      regexp = 'status values'
+    )
   }
 )

@@ -13,6 +13,14 @@ Gradient boosted decision trees are an excellent
   The xgboost.surv package provides a framework to help you 
   engage with these types of risk prediction analyses using `xgboost`.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/bcjaeger/xgboost.surv}
+  \item Report bugs at \url{https://github.com/bcjaeger/xgboost.surv/issues}
+}
+
+}
 \author{
 \strong{Maintainer}: Byron Jaeger \email{bcjaeger@uab.edu} (0000-0001-7399-2299)
 

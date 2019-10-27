@@ -23,10 +23,14 @@
 #'
 #' df <- data.frame(a=1:100, b=100:1, c=rep(letters[1:2],50))
 #'
+#' xgb_folds(data = df, nfolds = 10)
+#' xgb_folds(data = df, nfolds = 100)
 #' xgb_folds(data = df, nfolds = 10, strata = c)
-#'
-#'
-xgb_folds <- function(data, nfolds, strata){
+
+xgb_folds <- function(data, nfolds, strata=NULL){
+
+  if(vctrs::vec_size(data) < nfolds)
+    stop("nfolds must be >= number of rows in data")
 
   strata <- tidyselect::vars_select(names(data), {{strata}})
   rsamp_folds <- rsample::vfold_cv(data, v=nfolds, strata = strata)

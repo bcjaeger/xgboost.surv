@@ -4,7 +4,7 @@
 \alias{xgb_folds}
 \title{Folds for \link[xgboost:xgb.train]{xgboost}}
 \usage{
-xgb_folds(data, nfolds, strata)
+xgb_folds(data, nfolds, strata = NULL)
 }
 \arguments{
 \item{data}{a \link{data.frame} or \link[tibble:tibble-package]{tibble} that
@@ -27,7 +27,7 @@ specify stratifying variables to create balanced folds.
 
 df <- data.frame(a=1:100, b=100:1, c=rep(letters[1:2],50))
 
+xgb_folds(data = df, nfolds = 10)
+xgb_folds(data = df, nfolds = 100)
 xgb_folds(data = df, nfolds = 10, strata = c)
-
-
 }
