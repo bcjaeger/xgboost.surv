@@ -9,6 +9,8 @@
 maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 [![Travis build
 status](https://travis-ci.org/bcjaeger/xgboost.surv.svg?branch=master)](https://travis-ci.org/bcjaeger/xgboost.surv)
+[![Codecov test
+coverage](https://codecov.io/gh/bcjaeger/xgboost.surv/branch/master/graph/badge.svg)](https://codecov.io/gh/bcjaeger/xgboost.surv?branch=master)
 <!-- badges: end -->
 
 The goal of xgboost.surv is to provide a stable and intuitive workflow

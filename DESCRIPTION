@@ -19,7 +19,8 @@ LazyData: true
 Suggests: 
     testthat (>= 2.1.0),
     knitr,
-    rmarkdown
+    rmarkdown,
+    covr
 Imports: 
     rlang,
     tidyselect,
