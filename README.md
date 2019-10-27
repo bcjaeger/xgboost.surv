@@ -34,4 +34,4 @@ devtools::install_github("bcjaeger/xgboost.surv")
 ```
 
 A detailed example showing how to get started with `xgboost.surv` can be
-found here (PROVIDE LINK)
+found on the `pkgdown` site: <https://bcjaeger.github.io/xgboost.surv/>
