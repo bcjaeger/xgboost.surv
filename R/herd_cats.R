@@ -136,6 +136,18 @@ cat_gather <- function(
 #'
 cat_transfer <- function(to, from){
 
+  chr_vars <- purrr::map_lgl(from, is.character)
+
+  if(any(chr_vars)){
+    warning(
+      "the following character variables in ",
+      "from should be converted to factors ",
+      "before using transfer_factors: ",
+      list_things(names(which(chr_vars))),
+      call. = FALSE
+    )
+  }
+
   # check that the two frames have the same factor variables
 
   fctrs_to <- get_factors(to)

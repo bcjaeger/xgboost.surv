@@ -77,5 +77,25 @@ test_that(
     regexp = "to: z"
   )
 
+  df_bad_train <- data.frame(
+    x = c("A","A","B","C"),
+    y = 2:5,
+    z = c('a','b','c','d'),
+    stringsAsFactors = FALSE
+  )
+
+  df_test <- data.frame(
+    x = c("A","A","B","C"),
+    y = 2:5,
+    z = c('a','b','c','d'),
+    stringsAsFactors = FALSE
+  )
+
+  expect_warning(
+    cat_transfer(to = df_test, from = df_bad_train),
+    regexp = "x and z"
+  )
+
+
 
 })

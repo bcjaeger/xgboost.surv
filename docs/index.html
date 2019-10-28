@@ -83,12 +83,25 @@
 
       </header><div class="row">
   <div class="contents col-md-9">
-Gradient boosted decision trees are an excellent
-  machine learning algorithm to develop prediction functions. 
-  For analyses with censored outcomes, there are a number of 
-  ways to leverage the popular and efficient R package 'xgboost'.
-  The xgboost.surv package provides a framework to help you 
-  engage with these types of risk prediction analyses using `xgboost`.
+<div id="xgboostsurv" class="section level1">
+<div class="page-header"><h1 class="hasAnchor">
+<a href="#xgboostsurv" class="anchor"></a>xgboost.surv</h1></div>
+<!-- badges: start -->
+
+<p>The goal of xgboost.surv is to provide a stable and intuitive workflow for analysis of censored outcomes using the popular <code>xgboost</code> package.</p>
+<div id="installation" class="section level2">
+<h2 class="hasAnchor">
+<a href="#installation" class="anchor"></a>Installation</h2>
+<!-- You can install the released version of xgboost.surv from [CRAN](https://CRAN.R-project.org) with: -->
+<!-- ``` r -->
+<!-- install.packages("xgboost.surv") -->
+<!-- ``` -->
+<p>You can install the development version of <code>xgboost.surv</code> from <a href="https://github.com/">GitHub</a> with:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1"><span class="co"># install.packages("devtools")</span></a>
+<a class="sourceLine" id="cb1-2" title="2">devtools<span class="op">::</span><span class="kw"><a href="https://rdrr.io/pkg/devtools/man/remote-reexports.html">install_github</a></span>(<span class="st">"bcjaeger/xgboost.surv"</span>)</a></code></pre></div>
+<p>A detailed example showing how to get started with <code>xgboost.surv</code> can be found on the <code>pkgdown</code> site: <a href="https://bcjaeger.github.io/xgboost.surv/" class="uri">https://bcjaeger.github.io/xgboost.surv/</a></p>
+</div>
+</div>
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
@@ -115,7 +128,15 @@ Gradient boosted decision trees are an excellent
 </ul>
 </div>
 
-  </div>
+  <div class="dev-status">
+<h2>Dev status</h2>
+<ul class="list-unstyled">
+<li><a href="https://www.tidyverse.org/lifecycle/#maturing"><img src="https://img.shields.io/badge/lifecycle-maturing-blue.svg" alt="Lifecycle: maturing"></a></li>
+<li><a href="https://travis-ci.org/bcjaeger/xgboost.surv"><img src="https://travis-ci.org/bcjaeger/xgboost.surv.svg?branch=master" alt="Travis build status"></a></li>
+<li><a href="https://codecov.io/gh/bcjaeger/xgboost.surv?branch=master"><img src="https://codecov.io/gh/bcjaeger/xgboost.surv/branch/master/graph/badge.svg" alt="Codecov test coverage"></a></li>
+</ul>
+</div>
+</div>
 </div>
 
 
