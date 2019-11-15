@@ -35,5 +35,7 @@ You can install the development version of `xgboost.surv` from
 devtools::install_github("bcjaeger/xgboost.surv")
 ```
 
+## Getting started
+
 A detailed example showing how to get started with `xgboost.surv` can be
-found on the `pkgdown` site: <https://bcjaeger.github.io/xgboost.surv/>
+[found here](https://bcjaeger.github.io/xgboost.surv/)
